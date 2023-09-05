@@ -1,5 +1,5 @@
-# This is a project for Linux Commands
+Linux Commands
 
-'cd downloads'
+'Cd Downloads'
 
 ![](Images/Linux1.PNG)
