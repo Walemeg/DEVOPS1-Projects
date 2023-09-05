@@ -157,7 +157,186 @@ tail -n filename3.txt was used to specify the number of lines to view
 ![](Images/18%20tail.PNG)
 
 
- ### 19) 
+ ### 19) diff command
+ diff represents difference commands which is used for comparing the two contents of a file. It dispalys the parts that do not match.
+
+ diff filename2.txt filename3.txt command was used to compare teh content of the two files named filename2.txt and filename3.txt.
+ the difference was dispalyed in the output below
+
+ ![](Images/19%20diff.PNG)
+
+
+ ### 20) tar command 
+ tar command is use for chiving files similar to ZIP function.
+ basic syntax :  tar [options] [archive_file] [file or directory to be archived]
+
+ tar -cvf newarchive.tar /home/ubuntu command give the output below
+
+ ![](Images/20%20tar.PNG)
+
+
+ ## FILE PERMISIION AND OWNERSHIP
+
+ ### 21) chmod command
+ chmod command modified a file or directory's read , write and execution permissions. to allow all group members to be able to read, write and execute a file, change the perssion to -rwxrwxrwx using 777 e.g chmod 777 filename3.txt
+ 'ls -ltr' commnad was first used to check the permisison on the files before making changes. See output below
+
+ ![](Images/21%20chmod.PNG)
+
+
+ ### 22) chown command
+ chown command is used to change the ownership of a file , directory or symbolic link.
+ 'chown linuxuser2 filename.txt' command will assign ownership of filename.txt to linuxuser2. before using this commnad "ls -l" is used to check the current owner as shwon below (note ubuntu is the owner of the file and couldnt change it)
+
+ ![](Images/22%20chown.PNG)
+
+ ### 23) jobs command
+ It's used for displaying all running processes- along with their statuses
+ jobs [options] jobID
+
+
+### 24) kill command
+used for terminating an unresponsive program manually. To kill a program , the process identification number (PID) must be known by running "ps ux". 
+The default signal option used with KILL is SIGKILL which forces the program to stop.
+
+kill SIGKILL 22056 - (I only showed the command but didnt kill any program since it is not mine)
+
+![](Images/24%20kill.PNG)
+
+
+### 25) ping command
+used for checking ifa server is reachable or troubleshoot various connectivity issues
+syntax : ping [option] [hostname_or_IP_address]
+
+ping google.com was used in the output below
+CTRL+C was used to stop the ping command
+
+![](Images/25%20Ping.PNG)
+
+
+### 26) wget command
+it is used for downloading files from internet (HTTP, HTTPS and FTP);it works in the background.
+
+![](Images/26%20wget.PNG)
+
+
+### 27) uname command
+It's used for printing detail information about the linux system and hardware
+
+uname -a (for system information) ,   uname -s (prints kernel)   uname -n (prints the system node hostname) as shown below
+
+![](Images/27%20uname.PNG)
+
+
+### 28) top command 
+For displaying all running processes and real time view of the current system.
+CTRL+C was used to stop the command
+
+![](Images/28%20top.PNG)
+
+### 29) history command
+list all the previously executed commands, up to 500
+
+![](Images/29%20history.PNG)
+
+### 30) man command
+It provides user manual for any command you can run on the linux terminal
+
+' man ls'
+
+![](Images/30%20b.PNG)
+
+
+### 31) echo command 
+When echo command is used with a line of text or string , it displays the line of text as output. It supports other options when used with flags
+
+![](Images/31%20Echo.PNG)
+
+
+### 32) zip , unzip commands
+for compressing file into ZIP file (and decompressing file)
+
+![](Images/32%20zip%20unzip.PNG)
+
+
+### 33) hostname command
+For determining the system's hostname as shwon below
+hostname [option]  it works with -1 , -a , -all as shown below
+
+
+![](Images/33%20hostname.PNG)
+
+
+### 34) useradd , userdel commands
+Useradd is used for creating a new account; passwd used for creating a new password; userdel is used for deleting a user account
+root or sudo privileges is required to run the command
+
+useradd [option] username.
+I had to sudo to the useradd command to have required permisison as shown below
+
+![](Images/34%20useradd.PNG)
+
+
+### 35) apt-get command
+The command is used for Advanced Package Tool(APT) libraries in Linux. It helps in retrieving information from reliable sources to manage, update , remove , and install  software and it's dependecies.
+
+'apt-get'
+
+![](Images/35%20apt-get.PNG)
+
+
+### 36) nano , vi , jed commands
+The commands allows users to edit and manage files via text editor
+
+'nano filename2.txt'  to exit and save press CTRL + X and press enter
+
+'vi filename2.txt'  to save in vi type :w and hit Enter , to exit type :x and hit Enter key.
+
+![](Images/36%20nano.PNG)
+
+ 
+### 37) alias , unalias command
+alias allows you to create a shortcut with the same functionality as the command.
+
+alias K='KILL'
+
+unlias K
+
+![](Images/37%20alais.PNG)
+
+
+### 38) su command
+su means switch user, allows one to runa a program as a new user. It helps to access the system through SSH when the rootuser is unavailable. it will as k for the existing user's password for you to proceed
+
+su [options] [username [argument]]
+
+'su ubuntu' was used for the practice
+
+![](Images/38%20su.PNG)
+
+
+### 39) htop command 
+It is used for monitoring shystem resources and server processes in real time
+
+'htop'
+
+![](Images/39%20htop.PNG)
+
+
+### 40) ps commands
+It shows snap shot of all running processes in the system
+It can be used with flags like -T(all process linked to current shell) , -A (all running process) , -u username (process linked to a specific username)
+
+The below command is displayed in the output below
+
+'ps -T'
+
+'ps -A'
+
+
+'ps -u username'
+
+![](Images/40%20ps.PNG)
 
 
 
