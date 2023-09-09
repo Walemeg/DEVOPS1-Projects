@@ -71,6 +71,8 @@ I used Git clone command to create a local copy of my repository in a separate b
 ![](Images/Git%20Clone.PNG)
 
 
+## BRANCH MANAGEMENT AND TAGGING
+All the markdown syntax are already being used in the documentation in MD format
 
 
 
