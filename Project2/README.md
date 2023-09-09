@@ -47,3 +47,30 @@ I later deleted the newtraining branch using "git branch -d newtraining", since 
 ![](Images/4A%20Merging%20branch.PNG)
 ![](Images/4B.PNG)
 
+
+## 4) COLLABORATION AND REMORE REPOSITORIES
+
+Git is used for collaboration amongs remote developers residing in different locations. This is made possible through a web platform called GitHub, where repositories or folders are hosted.
+
+The firs step is to create an account and new repository.
+Using my existing account, I created a new repository for the Git Assignment as shown below.
+
+![](Images/GIT%20new%20repository.PNG)
+
+After creating my repository on my local machine, I added it the GitHub repository by first copying the https link as shown below
+
+![](Images/github%20link%20copy.PNG)
+![](Images/GIT%20remote%20add%20link.PNG)
+
+After commiting my changes in the local repository, I pushed the content into remote repository as shown below
+
+![](Images/GIT%20push.PNG)
+
+I used Git clone command to create a local copy of my repository in a separate branch so that anyone can make changes there.
+
+![](Images/Git%20Clone.PNG)
+
+
+
+
+
